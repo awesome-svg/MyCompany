@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function loadJobs() {
     try {
-        const response = await fetch('/jobs/jobs.json');
+        const response = await fetch('jobs.json');
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
          // 只加载状态为 active 的岗位
