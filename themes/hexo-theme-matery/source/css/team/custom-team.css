@@ -1,0 +1,36 @@
+
+@font-face {
+  font-family: 'myFont';
+  /*src: url('../font/Alibaba2.0CN-45R.ttf');*/
+  src: url('../font/Courier_New_Bold.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+body { font-family: 'Inter', sans-serif; }
+	
+	
+.faq-answer { max-height: 0; overflow: hidden; transition: all 0.3s ease-in-out; opacity: 0; }
+.faq-item.active .faq-answer { max-height: 300px; opacity: 1; padding-top: 1rem; }
+.faq-item.active .rotate-icon { transform: rotate(180deg); }
+.smooth-scroll { scroll-behavior: smooth; }
+.glass-effect { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+
+/* 人才招聘*/
+.fade-in { animation: fadeIn 0.5s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.job-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.job-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+.benefit-item { transition: all 0.2s; }
+.benefit-item:hover { background-color: #f8fafc; transform: translateX(4px); }
+.contact-card { transition: all 0.3s; }
+.contact-card:hover { border-color: #6366f1; transform: translateY(-2px); }
+.form-input { transition: all 0.2s; }
+.form-input:focus { border-color: #6366f1; box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1); }
+.btn-submit { transition: all 0.3s; }
+.btn-submit:disabled { opacity: 0.7; cursor: not-allowed; }
+.success-check { animation: checkBounce 0.6s ease-out forwards; }
+@keyframes checkBounce { 0% { transform: scale(0); } 50% { transform: scale(1.2); } 100% { transform: scale(1); } }
+				
+/* 模态框滚动条隐藏 */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

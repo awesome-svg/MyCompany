@@ -1,0 +1,59 @@
+ <!-- 导航栏 -->
+<header>
+	<nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="flex justify-between h-20 items-center">
+				<div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.location.href='/team/'">
+					<div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white text-xl font-bold">
+						<i class="fas fa-cube"></i>
+					</div>
+					<span class="font-bold text-2xl tracking-tight text-slate-900">智启未来</span>
+				</div>
+				<div class="hidden md:flex space-x-8 items-center">
+					<a href="/" class="<%= page.path === 'index.html' || page.path === 'team/index.html' ? 'text-indigo-600 font-semibold border-b-2 border-indigo-600 pb-1' : 'text-slate-600 hover:text-indigo-600 font-medium transition-colors' %>">
+							首页
+					</a>
+
+					<a href="/products/" class="<%= page.path.includes('products') ? 'text-indigo-600 font-semibold border-b-2 border-indigo-600 pb-1' : 'text-slate-600 hover:text-indigo-600 font-medium transition-colors' %>">
+							产品中心
+					</a>
+					<a href="/news/" class="<%= page.path.includes('news') ? 'text-indigo-600 font-semibold border-b-2 border-indigo-600 pb-1' : 'text-slate-600 hover:text-indigo-600 font-medium transition-colors' %>">
+							新闻动态
+					</a>
+					<a href="/culture/" class="<%= page.path.includes('culture') ? 'text-indigo-600 font-semibold border-b-2 border-indigo-600 pb-1' : 'text-slate-600 hover:text-indigo-600 font-medium transition-colors' %>">
+							公司文化
+					</a>
+					<a href="/support/" class="<%= page.path.includes('support') ? 'text-indigo-600 font-semibold border-b-2 border-indigo-600 pb-1' : 'text-slate-600 hover:text-indigo-600 font-medium transition-colors' %>">
+							客户支持
+					</a>
+
+					<a href="/jobs/" class="<%= page.path.includes('jobs') ? 'text-indigo-600 font-semibold border-b-2 border-indigo-600 pb-1' : 'text-slate-600 hover:text-indigo-600 font-medium transition-colors' %>">
+							人才招聘
+					</a>
+
+					<button onclick="window.location.href='/contact/'" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-medium hover:bg-indigo-700 transition shadow-lg shadow-indigo-500/30 <%= page.path.includes('contact') ? 'ring-2 ring-offset-2 ring-indigo-500' : '' %>">
+							联系合作
+					</button>
+			</div>
+			
+			 <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-50">首页</a>
+                <a href="/products/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-50">产品中心</a>
+								<a href="/news/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-50">新闻动态</a>
+                <a href="//culture/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-50">公司文化</a>
+								<a href="/support/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-50">客户支持</a>
+                <a href="/jobs/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-50">人才招聘</a>
+            </div>
+        </div>
+
+				<div class="md:hidden flex items-center">
+					<button class="text-slate-600 hover:text-indigo-600 focus:outline-none">
+						<i class="fas fa-bars text-2xl"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>

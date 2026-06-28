@@ -1,0 +1,136 @@
+
+{
+  "meta": {
+    "lastUpdated": "2026-06-20",
+    "totalActive": 5
+  },
+  "jobs": [
+    {
+      "id": "job-001",
+      "title": "高级前端工程师",
+      "department": "技术研发部",
+      "location": "北京",
+      "salary": "25K-40K",
+      "experience": "3-5年",
+      "type": "urgent",
+      "status": "active",
+      "publishDate": "2026-06-18",
+      "tags": ["React", "TypeScript", "架构"],
+      "responsibilities": [
+        "负责核心SaaS产品的前端架构设计与性能优化",
+        "主导内部组件库的建设与维护，提升研发效率"
+      ],
+      "requirements": [
+        "精通 React/Vue 主流框架，具备3年以上大型项目实战经验",
+        "深入理解浏览器原理，熟悉 Webpack/Vite 等工程化工具"
+      ],
+      "career": "高级工程师 -> 技术专家 -> 前端架构师"
+    },
+    {
+      "id": "job-002",
+      "title": "AI 产品经理",
+      "department": "产品部",
+      "location": "上海",
+      "salary": "30K-50K",
+      "experience": "3-5年",
+      "type": "new",
+      "status": "active",
+      "publishDate": "2026-06-20",
+      "tags": ["AIGC", "大模型", "B端"],
+      "responsibilities": [
+        "负责大模型应用场景的产品规划、需求分析与落地",
+        "调研行业竞品与用户需求，输出高质量PRD文档"
+      ],
+      "requirements": [
+        "2年以上AI相关产品经验，深刻理解LLM技术边界与特性",
+        "具备优秀的逻辑思维与跨团队沟通协调能力"
+      ],
+      "career": "产品经理 -> 高级产品经理 -> 产品总监"
+    },
+    {
+      "id": "job-003",
+      "title": "UI/UX 设计师",
+      "department": "设计部",
+      "location": "深圳",
+      "salary": "20K-35K",
+      "experience": "2-4年",
+      "type": "normal",
+      "status": "active",
+      "publishDate": "2026-06-15",
+      "tags": ["Figma", "交互设计", "视觉"],
+      "responsibilities": [
+        "负责全线产品的视觉风格定义与交互体验设计",
+        "建立并维护统一的设计规范系统（Design System）"
+      ],
+      "requirements": [
+        "熟练掌握 Figma、Sketch 等设计工具，作品集优秀",
+        "对用户体验有敏锐的洞察力，注重细节与美感"
+      ],
+      "career": "设计师 -> 资深设计师 -> 设计主管"
+    },
+    {
+      "id": "job-004",
+      "title": "后端架构师",
+      "department": "技术研发部",
+      "location": "北京",
+      "salary": "40K-60K",
+      "experience": "5年以上",
+      "type": "urgent",
+      "status": "active",
+      "publishDate": "2026-06-19",
+      "tags": ["Java", "微服务", "高并发"],
+      "responsibilities": [
+        "设计高可用、高并发的分布式系统架构",
+        "解决线上核心技术瓶颈，主导技术选型与重构"
+      ],
+      "requirements": [
+        "精通 Java 生态，有大规模微服务架构落地经验",
+        "熟悉 MySQL、Redis、MQ 等中间件的原理与调优"
+      ],
+      "career": "架构师 -> 首席架构师 -> 技术副总裁"
+    },
+    {
+      "id": "job-005",
+      "title": "人力资源专员",
+      "department": "职能部",
+      "location": "远程",
+      "salary": "15K-25K",
+      "experience": "1-3年",
+      "type": "normal",
+      "status": "inactive",
+      "publishDate": "2026-05-01",
+      "tags": ["招聘", "员工关系"],
+      "responsibilities": [
+        "负责技术岗位的简历筛选、面试安排及流程跟进",
+        "维护招聘渠道，拓展人才引进网络"
+      ],
+      "requirements": [
+        "人力资源管理相关专业本科及以上学历",
+        "具备良好的亲和力与沟通协调能力"
+      ],
+      "career": "HR专员 -> HRBP -> 人力资源经理"
+    },
+    {
+      "id": "job-006",
+      "title": "测试开发工程师",
+      "department": "质量保障部",
+      "location": "杭州",
+      "salary": "18K-30K",
+      "experience": "2-4年",
+      "type": "normal",
+      "status": "inactive",
+      "publishDate": "2026-04-10",
+      "tags": ["自动化测试", "Python", "Selenium"],
+      "responsibilities": [
+        "搭建和维护自动化测试框架",
+        "编写测试脚本，提高测试覆盖率"
+      ],
+      "requirements": [
+        "熟悉至少一种编程语言（Python/Java）",
+        "熟悉常用的自动化测试工具"
+      ],
+      "career": "测试工程师 -> 测试开发专家 -> 质量经理"
+    }
+
+  ]
+}
