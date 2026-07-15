@@ -39,6 +39,6 @@
     "live2d-widget-model-miku": "^1.0.5",
     "live2d-widget-model-shizuku": "^1.0.5",
     "live2d-widget-model-z16": "^1.0.5",
-    "mysql2": "^3.22.5"
+    "mysql2": "^3.23.0"
   }
 }
