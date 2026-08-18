@@ -55,7 +55,6 @@ async function loadJobs() {
     } catch (error) {
         console.error('Failed to load jobs:', error);
         elements.container.innerHTML = `<div class="col-span-full text-center text-red-500">数据加载失败，使用模拟数据</div>`;
-				 useMockData();
     }
 }
 
@@ -92,55 +91,6 @@ function applyFilters() {
     });
 
     renderJobs(filtered);
-}
-
-// 模拟数据（当JSON文件不存在时使用）
-function useMockData() {
-    allJobs = [
-        {
-      "id": "job-001",
-      "title": "高级前端工程师",
-      "department": "技术研发部",
-      "location": "北京",
-      "salary": "25K-40K",
-      "experience": "3-5年",
-      "type": "urgent",
-      "status": "active",
-      "publishDate": "2026-06-18",
-      "tags": ["React", "TypeScript", "架构"],
-      "responsibilities": [
-        "负责核心SaaS产品的前端架构设计与性能优化",
-        "主导内部组件库的建设与维护，提升研发效率"
-      ],
-      "requirements": [
-        "精通 React/Vue 主流框架，具备3年以上大型项目实战经验",
-        "深入理解浏览器原理，熟悉 Webpack/Vite 等工程化工具"
-      ],
-      "career": "高级工程师 -> 技术专家 -> 前端架构师"
-    },
-    {
-      "id": "job-002",
-      "title": "AI 产品经理",
-      "department": "产品部",
-      "location": "上海",
-      "salary": "30K-50K",
-      "experience": "3-5年",
-      "type": "new",
-      "status": "active",
-      "publishDate": "2026-06-20",
-      "tags": ["AIGC", "大模型", "B端"],
-      "responsibilities": [
-        "负责大模型应用场景的产品规划、需求分析与落地",
-        "调研行业竞品与用户需求，输出高质量PRD文档"
-      ],
-      "requirements": [
-        "2年以上AI相关产品经验，深刻理解LLM技术边界与特性",
-        "具备优秀的逻辑思维与跨团队沟通协调能力"
-      ],
-      "career": "产品经理 -> 高级产品经理 -> 产品总监"
-    }
-    ];
-    renderJobs(allJobs);
 }
 
 
@@ -296,7 +246,7 @@ window.submitApplication = function() {
         credentials: 'same-origin'
     })*/
 		//线上部署访问
-		fetch('https://resumeupload.personyzh.cn/api/recruitment/apply', {
+		fetch('https://dataupload.personyzh.cn/api/recruitment/apply', {
         method: 'POST',
         body: formData,
         // 如果不需要携带cookie可以删除credentials配置

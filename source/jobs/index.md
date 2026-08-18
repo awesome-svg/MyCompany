@@ -128,15 +128,18 @@ layout: layout-team
                         <select id="filter-dept" class="appearance-none bg-slate-50 border border-slate-200 text-slate-700 py-2 pl-3 pr-8 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none cursor-pointer text-sm min-w-[140px]">
                             <option value="">所有部门</option>
                             <option value="技术研发部">技术研发部</option>
-                            <option value="产品部">产品部</option>
-                            <option value="设计部">设计部</option>
-                            <option value="职能部">职能部</option>
+                            <option value="管理部">管理部</option>
+                            <option value="项目部">项目部</option>
+                            <option value="财务部">财务部</option>
+														<option value="行政部">行政部</option>
+														<option value="销售部">销售部</option>
+														<option value="其它">其它</option>
+														
                         </select>
-                        <select id="filter-loc" class="appearance-none bg-slate-50 border border-slate-200 text-slate-700 py-2 pl-3 pr-8 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none cursor-pointer text-sm min-w-[120px]">
+                        <select id="filter-loc" class="appearance-none bg-slate-50  border border-slate-200 text-slate-700 py-2 pl-3 pr-8 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none cursor-pointer text-sm min-w-[120px]">
                             <option value="">工作地点</option>
-                            <option value="北京">北京</option>
-                            <option value="上海">上海</option>
-                            <option value="深圳">深圳</option>
+                            <option value="成都">成都</option>
+
                             <option value="远程">远程办公</option>
                         </select>
                     </div>

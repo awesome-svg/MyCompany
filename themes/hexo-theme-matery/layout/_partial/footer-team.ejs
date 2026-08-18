@@ -1,7 +1,7 @@
  <!-- 5. 页脚 -->
     <footer class="bg-slate-900 text-slate-300 py-8 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 ">
                 <div class="col-span-1 md:col-span-1">
                     <div class="flex items-center gap-2 mb-4 text-white">
                         <i class="fas fa-rocket text-indigo-500 text-xl"></i>
@@ -14,19 +14,19 @@
                 <div>
                     <h4 class="text-white font-bold mb-4">服务项目</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-indigo-400 transition">大赛实训营</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">企业家座谈</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">创业加速营</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">孵化基地入驻</a></li>
+                        <li><a  class="hover:text-indigo-400 transition">大赛实训营</a></li>
+                        <li><a  class="hover:text-indigo-400 transition">企业家座谈</a></li>
+                        <li><a  class="hover:text-indigo-400 transition">创业加速营</a></li>
+                        <li><a  class="hover:text-indigo-400 transition">孵化基地入驻</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-white font-bold mb-4">关于我们</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-indigo-400 transition">机构介绍</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">导师团队</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">加入我们</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">联系方式</a></li>
+                        <li><a  class="hover:text-indigo-400 transition">机构介绍</a></li>
+                        <li><a  class="hover:text-indigo-400 transition">导师团队</a></li>
+                        <li><a  class="hover:text-indigo-400 transition">加入我们</a></li>
+                        <li><a  class="hover:text-indigo-400 transition">联系方式</a></li>
                     </ul>
                 </div>
                 <div>
@@ -65,8 +65,12 @@
 			<script src=" /js/team/news_data.js"> </script>
 <% } %>
 <% if ( page.title === '客户支持') { %>
-			<script src=" /js/team/support.js"> </script>
+		<script src=" /js/team/custom_search.js"> </script>
+		<script src=" /js/team/commonques.js"> </script>		
 <% } %>
 <% if ( page.title === '人才招聘') { %>
 		<script src=" /js/team/job_app.js"> </script>
+<% } %>
+<% if ( page.title === '产品展示') { %>
+		<script src=" /js/team/products_data.js"> </script>
 <% } %>

@@ -1,136 +1,277 @@
 
 {
   "meta": {
-    "lastUpdated": "2026-06-20",
-    "totalActive": 5
+    "lastUpdated": "2026-06-28",
+    "totalActive": 10
   },
   "jobs": [
     {
       "id": "job-001",
-      "title": "高级前端工程师",
-      "department": "技术研发部",
-      "location": "北京",
-      "salary": "25K-40K",
-      "experience": "3-5年",
-      "type": "urgent",
+      "title": "部门主管",
+      "department": "管理部",
+      "location": "本地",
+      "salary": "8000-15000+",
+      "experience": "2年以上管理经验",
+      "type": "management",
       "status": "active",
-      "publishDate": "2026-06-18",
-      "tags": ["React", "TypeScript", "架构"],
+      "publishDate": "2026-06-28",
+      "tags": [
+        "团队管理",
+        "业绩目标",
+        "流程优化"
+      ],
       "responsibilities": [
-        "负责核心SaaS产品的前端架构设计与性能优化",
-        "主导内部组件库的建设与维护，提升研发效率"
+        "统筹部门团队管理",
+        "制定业绩目标",
+        "流程优化",
+        "人员考核管理"
       ],
       "requirements": [
-        "精通 React/Vue 主流框架，具备3年以上大型项目实战经验",
-        "深入理解浏览器原理，熟悉 Webpack/Vite 等工程化工具"
+        "2年以上相关管理经验",
+        "具备带队落地目标能力"
       ],
-      "career": "高级工程师 -> 技术专家 -> 前端架构师"
+      "career": "部门主管 -> 高级经理 -> 总监"
     },
     {
       "id": "job-002",
-      "title": "AI 产品经理",
-      "department": "产品部",
-      "location": "上海",
-      "salary": "30K-50K",
-      "experience": "3-5年",
-      "type": "new",
+      "title": "财务主管",
+      "department": "财务部",
+      "location": "本地",
+      "salary": "9000-16000+",
+      "experience": "2年以上管理经验",
+      "type": "management",
       "status": "active",
-      "publishDate": "2026-06-20",
-      "tags": ["AIGC", "大模型", "B端"],
+      "publishDate": "2026-06-28",
+      "tags": [
+        "账务管控",
+        "税务筹划",
+        "成本核算"
+      ],
       "responsibilities": [
-        "负责大模型应用场景的产品规划、需求分析与落地",
-        "调研行业竞品与用户需求，输出高质量PRD文档"
+        "全盘账务管控",
+        "税务筹划",
+        "成本核算",
+        "财务团队管理"
       ],
       "requirements": [
-        "2年以上AI相关产品经验，深刻理解LLM技术边界与特性",
-        "具备优秀的逻辑思维与跨团队沟通协调能力"
+        "2年以上相关管理经验",
+        "具备带队落地目标能力"
       ],
-      "career": "产品经理 -> 高级产品经理 -> 产品总监"
+      "career": "财务主管 -> 财务经理 -> 财务总监"
     },
     {
       "id": "job-003",
-      "title": "UI/UX 设计师",
-      "department": "设计部",
-      "location": "深圳",
-      "salary": "20K-35K",
-      "experience": "2-4年",
-      "type": "normal",
+      "title": "项目负责人",
+      "department": "项目部",
+      "location": "本地",
+      "salary": "9000-14000+",
+      "experience": "2年以上管理经验",
+      "type": "management",
       "status": "active",
-      "publishDate": "2026-06-15",
-      "tags": ["Figma", "交互设计", "视觉"],
+      "publishDate": "2026-06-28",
+      "tags": [
+        "项目落地",
+        "资源对接",
+        "进度管控"
+      ],
       "responsibilities": [
-        "负责全线产品的视觉风格定义与交互体验设计",
-        "建立并维护统一的设计规范系统（Design System）"
+        "统筹全项目落地",
+        "资源对接",
+        "进度管控",
+        "项目收益把控"
       ],
       "requirements": [
-        "熟练掌握 Figma、Sketch 等设计工具，作品集优秀",
-        "对用户体验有敏锐的洞察力，注重细节与美感"
+        "2年以上相关管理经验",
+        "具备带队落地目标能力"
       ],
-      "career": "设计师 -> 资深设计师 -> 设计主管"
+      "career": "项目负责人 -> 项目总监 -> 运营副总"
     },
     {
       "id": "job-004",
-      "title": "后端架构师",
-      "department": "技术研发部",
-      "location": "北京",
-      "salary": "40K-60K",
-      "experience": "5年以上",
-      "type": "urgent",
+      "title": "行政/文员",
+      "department": "行政部",
+      "location": "本地",
+      "salary": "5100-6200",
+      "experience": "不限/零基础",
+      "type": "fulltime",
       "status": "active",
-      "publishDate": "2026-06-19",
-      "tags": ["Java", "微服务", "高并发"],
+      "publishDate": "2026-06-28",
+      "tags": [
+        "资料归档",
+        "来访接待",
+        "考勤统计"
+      ],
       "responsibilities": [
-        "设计高可用、高并发的分布式系统架构",
-        "解决线上核心技术瓶颈，主导技术选型与重构"
+        "资料归档",
+        "来访接待",
+        "考勤统计",
+        "后勤统筹"
       ],
       "requirements": [
-        "精通 Java 生态，有大规模微服务架构落地经验",
-        "熟悉 MySQL、Redis、MQ 等中间件的原理与调优"
+        "学历不限",
+        "零基础可带薪培训"
       ],
-      "career": "架构师 -> 首席架构师 -> 技术副总裁"
+      "career": "行政专员 -> 行政主管 -> 行政经理"
     },
     {
       "id": "job-005",
-      "title": "人力资源专员",
-      "department": "职能部",
-      "location": "远程",
-      "salary": "15K-25K",
-      "experience": "1-3年",
-      "type": "normal",
-      "status": "inactive",
-      "publishDate": "2026-05-01",
-      "tags": ["招聘", "员工关系"],
+      "title": "会计",
+      "department": "财务部",
+      "location": "本地",
+      "salary": "5800-7200",
+      "experience": "不限/零基础",
+      "type": "fulltime",
+      "status": "active",
+      "publishDate": "2026-06-28",
+      "tags": [
+        "票据整理",
+        "费用核算",
+        "月度报税"
+      ],
       "responsibilities": [
-        "负责技术岗位的简历筛选、面试安排及流程跟进",
-        "维护招聘渠道，拓展人才引进网络"
+        "票据整理",
+        "费用核算",
+        "月度报税",
+        "财务档案归集"
       ],
       "requirements": [
-        "人力资源管理相关专业本科及以上学历",
-        "具备良好的亲和力与沟通协调能力"
+        "学历不限",
+        "零基础可带薪培训"
       ],
-      "career": "HR专员 -> HRBP -> 人力资源经理"
+      "career": "会计专员 -> 总账会计 -> 财务主管"
     },
     {
       "id": "job-006",
-      "title": "测试开发工程师",
-      "department": "质量保障部",
-      "location": "杭州",
-      "salary": "18K-30K",
-      "experience": "2-4年",
-      "type": "normal",
-      "status": "inactive",
-      "publishDate": "2026-04-10",
-      "tags": ["自动化测试", "Python", "Selenium"],
+      "title": "管培生",
+      "department": "其它",
+      "location": "本地",
+      "salary": "4800-5900",
+      "experience": "应届生/不限",
+      "type": "fulltime",
+      "status": "active",
+      "publishDate": "2026-06-28",
+      "tags": [
+        "轮岗实训",
+        "管理层储备",
+        "定岗涨薪"
+      ],
       "responsibilities": [
-        "搭建和维护自动化测试框架",
-        "编写测试脚本，提高测试覆盖率"
+        "全部门轮岗实训",
+        "定向储备管理层人才"
       ],
       "requirements": [
-        "熟悉至少一种编程语言（Python/Java）",
-        "熟悉常用的自动化测试工具"
+        "学历不限",
+        "零基础可带薪培训"
       ],
-      "career": "测试工程师 -> 测试开发专家 -> 质量经理"
+      "career": "管培生 -> 部门主管 -> 高级经理"
+    },
+    {
+      "id": "job-007",
+      "title": "业务岗",
+      "department": "销售部",
+      "location": "本地",
+      "salary": "6500-13000+",
+      "experience": "不限/零基础",
+      "type": "fulltime",
+      "status": "active",
+      "publishDate": "2026-06-28",
+      "tags": [
+        "新客开发",
+        "老客维护",
+        "渠道拓展"
+      ],
+      "responsibilities": [
+        "新客开发",
+        "老客维护",
+        "渠道拓展",
+        "完成月度指标"
+      ],
+      "requirements": [
+        "学历不限",
+        "零基础可带薪培训"
+      ],
+      "career": "业务员 -> 销售主管 -> 销售总监"
+    },
+    {
+      "id": "job-008",
+      "title": "项目助理",
+      "department": "项目部",
+      "location": "本地",
+      "salary": "5050-6150",
+      "experience": "不限/应届生",
+      "type": "fulltime",
+      "status": "active",
+      "publishDate": "2026-06-28",
+      "tags": [
+        "资料整理",
+        "台账录入",
+        "进度跟进"
+      ],
+      "responsibilities": [
+        "协助项目负责人整理项目资料",
+        "台账录入",
+        "对接各方资料",
+        "跟进项目进度",
+        "会议纪要整理",
+        "外勤辅助"
+      ],
+      "requirements": [
+        "细心有责任心",
+        "会基础办公软件",
+        "有无经验均可，应届生可接纳"
+      ],
+      "career": "项目助理 -> 项目负责人 -> 项目总监"
+    },
+    {
+      "id": "job-009",
+      "title": "在校实习生",
+      "department": "其它",
+      "location": "本地",
+      "salary": "130元/天+全勤",
+      "experience": "在校大学生",
+      "type": "internship",
+      "status": "active",
+      "publishDate": "2026-06-28",
+      "tags": [
+        "数据录入",
+        "内勤辅助",
+        "实习证明"
+      ],
+      "responsibilities": [
+        "数据录入",
+        "内勤辅助",
+        "专人带教"
+      ],
+      "requirements": [
+        "在校大学生",
+        "每周出勤≥4天"
+      ],
+      "career": "实习生 -> 正式员工 -> 骨干成员"
+    },
+    {
+      "id": "job-010",
+      "title": "短期兼职",
+      "department": "其它",
+      "location": "本地",
+      "salary": "150-180元/天",
+      "experience": "不限",
+      "type": "parttime",
+      "status": "active",
+      "publishDate": "2026-06-28",
+      "tags": [
+        "资料整理",
+        "活动协助",
+        "工时灵活"
+      ],
+      "responsibilities": [
+        "临时资料整理",
+        "活动协助"
+      ],
+      "requirements": [
+        "时间充裕",
+        "做事踏实即可"
+      ],
+      "career": "兼职人员 -> 长期合作伙伴"
     }
-
   ]
 }

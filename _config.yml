@@ -142,32 +142,6 @@ githubEmojis:
   customEmojis:
   
   
-douban:
-  id: 295283474  #这个需要修改为你个人的id
-  user: AweSone 
-  builtin: false
-  customize_layout: douban
-  dynamic: false
-  item_per_page: 6
-  meta_max_line: 4
-  book:
-      title: '阅见山河 · 书间日月'
-      quote: '那些读过的书，终将成为你的气质和风骨!'
-  movie:
-      title: '光影流年 · 帧间梦境'
-      quote: '看过的电影，现在你还记得吗?'
-  games:
-      title: 'My Games'
-      quote: '这些游戏你不能不知道' 
-  timeout: 30000
-
-
-douban_card:
-  enable: false
-  api_key: YOUR_API_KEY
-  user_id: 295283474
-
-
 # 图片懒加载配置
 lazyload:
   enable: false          # true 开启懒加载, false 关闭懒加载

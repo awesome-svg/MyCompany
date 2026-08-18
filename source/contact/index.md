@@ -105,21 +105,47 @@ layout: layout-team
         }
 
         // 表单提交处理
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+				document.getElementById('contactForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             const btn = this.querySelector('button[type="submit"]');
             const originalText = btn.innerHTML;
-            
-            // 模拟发送状态
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 发送中...';
-            
-            setTimeout(() => {
-                alert('消息已发送！我们会尽快与您联系。');
-                this.reset();
-                btn.disabled = false;
-                btn.innerHTML = originalText;
-            }, 1500);
+           
+						
+						// 1. 获取表单数据
+						const formData = new FormData(this);
+						const data = Object.fromEntries(formData.entries());
+
+						// 2. 禁用按钮，防止重复提交
+						btn.disabled = true;
+						btn.innerHTML = '<i class="fas fa-spinner fa-spin ml-2"></i> 发送中...';
+						try {
+							// 3. 发送请求到后端 API
+							const response = await fetch('https://dataupload.personyzh.cn/api/contact/messageSubmit', {
+								method: 'POST',
+								headers: {
+									'Content-Type': 'application/json',
+								},
+								body: JSON.stringify(data),
+							});
+
+							const result = await response.json();
+
+							if (result.code === 200 || result.code === 0) {
+								// 4. 成功提示
+								alert('消息已发送！我们会尽快与您联系。');
+								this.reset(); // 清空表单
+							} else {
+								// 5. 失败提示
+								alert(result.msg || '发送失败，请重试');
+							}
+						} catch (error) {
+							console.error('Error:', error);
+							alert('网络错误，请检查连接后重试');
+						} finally {
+							// 6. 恢复按钮状态
+							btn.disabled = false;
+							btn.innerHTML = originalText;
+						}		
         });
     </script>
 </main>

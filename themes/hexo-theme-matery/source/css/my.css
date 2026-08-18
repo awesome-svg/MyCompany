@@ -255,3 +255,40 @@ code[class*="language-"], pre[class*="language-"] {
     order: 4 !important;
 }
 
+/* 强制重置美洽窗口的位置和尺寸 */
+
+#meiqia-container {
+    /* 固定定位 */
+    position: fixed !important;
+    
+    /* 位置设置：右侧距离屏幕边缘 20px，垂直居中 */
+    right: 20px !important;
+    top: 50% !important;
+    
+    /* 关键：使用 transform 实现真正的垂直居中 */
+    transform: translateY(-50%) !important;
+    
+    /* 确保层级足够高，但低于自定义遮罩或弹窗 */
+    z-index: 99999 !important;
+    
+    /* 可选：限制最大高度，防止超出屏幕 */
+    max-height: 80vh !important;
+    
+    /* 可选：设置固定宽度，保持美观 */
+    width: 360px !important; 
+    
+    /* 恢复过渡动画，让出现/消失更平滑 */
+    transition: all 0.3s ease !important;
+}
+
+/* 如果美洽使用的是 iframe 包裹 */
+iframe[src*="meiqia"] {
+    position: fixed !important;
+    right: 20px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 99999 !important;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    border-radius: 12px !important;
+}

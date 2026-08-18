@@ -19,12 +19,14 @@ layout: layout-team
 									专为大学生、初创者及企业家打造的全周期成长生态。通过大赛实训、高端沙龙与私董会，链接资源，加速梦想落地。
 							</p>
 							<div class="flex flex-col sm:flex-row justify-center gap-4">
-									<button onclick="openModal()" class="px-8 py-4 bg-indigo-600 text-white rounded-full font-bold text-lg shadow-lg hover:bg-indigo-700 hover:shadow-xl transition transform hover:-translate-y-1">
+									<a href="#bottom-cta" class="px-8 py-4 bg-indigo-600 text-white rounded-full font-bold text-lg shadow-lg hover:bg-indigo-700 hover:shadow-xl transition transform hover:-translate-y-1">
 											开启成长之旅
-									</button>
-									<button class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-full font-bold text-lg hover:bg-slate-50 hover:border-slate-300 transition flex items-center justify-center gap-2">
+									</a>
+									<button id="open-video-btn" class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-full font-bold text-lg hover:bg-slate-50 hover:border-slate-300 transition flex items-center justify-center gap-2">
 											<i class="fas fa-play-circle text-indigo-600"></i> 观看介绍视频
 									</button>
+									
+									
 							</div>
 					</div>
 			</div>
@@ -32,6 +34,28 @@ layout: layout-team
 			<div class="absolute top-0 left-0 -ml-20 -mt-20 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
 			<div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
 	</div>
+	
+	<!-- 视频模态框 (默认隐藏) -->
+	<div id="video-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+			<div class="relative w-full max-w-4xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300" id="video-container">
+					
+					<!-- 关闭按钮 -->
+					<button onclick="closeVideoModal()" class="absolute top-4 right-4 text-white/70 hover:text-white bg-black/50 rounded-full p-2 transition">
+							<i class="fas fa-times text-xl"></i>
+					</button>
+
+					<!-- 视频播放器 (以 YouTube 为例，本地视频类似) -->
+					<iframe 
+							id="promo-video"
+							class="w-full h-full"
+							src="" 
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+							allowfullscreen>
+					</iframe>
+			</div>
+	</div>
+	
     <!-- 核心培训服务标题 -->
 	<div id="training" class="py-16 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -225,7 +249,7 @@ layout: layout-team
         </div>
         
         <!-- 底部 CTA -->
-        <div class="mt-20 text-center">
+        <div id="bottom-cta" class="mt-20 text-center">
             <h3 class="text-2xl font-bold text-slate-900 mb-4">找到属于你的成长路径</h3>
             <p class="text-slate-500 max-w-2xl mx-auto">根据你的身份和阶段，匹配最适合的培训服务，开启创业成长之旅。</p>
         </div>
@@ -297,7 +321,7 @@ layout: layout-team
                             <p class="text-slate-500 text-sm">填写信息，24小时内专属规划师将与你联系</p>
                         </div>
 
-                        <form onsubmit="event.preventDefault(); alert('提交成功！我们的规划师将在24小时内联系您。');" class="space-y-5">
+                        <form  id="lead-form"  class="space-y-5">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-slate-700 mb-1.5">姓名</label>
                                 <div class="relative">
@@ -329,7 +353,7 @@ layout: layout-team
                                 <label for="need" class="block text-sm font-medium text-slate-700 mb-1.5">您最感兴趣的服务</label>
                                 <div class="relative">
                                     <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"><i class="fas fa-star"></i></span>
-                                    <select id="need" class="w-full pl-10 pr-4 py-3 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition bg-slate-50 appearance-none">
+                                    <select id="need_services" class="w-full pl-10 pr-4 py-3 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition bg-slate-50 appearance-none">
                                         <option>创新创业大赛实训营</option>
                                         <option>知名企业家座谈会</option>
                                         <option>创业沙龙主题交流</option>
@@ -340,9 +364,12 @@ layout: layout-team
                                 </div>
                             </div>
                             
-                            <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold py-4 rounded-xl hover:shadow-lg hover:shadow-indigo-500/30 transition-all transform hover:-translate-y-0.5 text-lg">
+                            <button type="submit" id="submit-btn" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold py-4 rounded-xl hover:shadow-lg hover:shadow-indigo-500/30 transition-all transform hover:-translate-y-0.5 text-lg">
                                 立即免费预约
                             </button>
+														
+														<!-- 用于显示成功/错误信息的提示框 -->
+														<div id="form-message" class="hidden mt-4 p-3 rounded-lg text-center text-sm"></div>
                             
                             <p class="text-xs text-slate-400 text-center mt-2">
                                 提交即表示您同意我们的<a href="#" class="underline hover:text-indigo-600">服务条款</a>和<a href="#" class="underline hover:text-indigo-600">隐私政策</a>，我们承诺不会泄露您的个人信息
